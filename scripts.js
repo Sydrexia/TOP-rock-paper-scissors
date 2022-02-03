@@ -1,10 +1,30 @@
 let playerScore = 0
 let computerScore = 0
 
+
+function playMatch() {
+    while (playerScore < 5 && computerScore < 5) {
+        returnChoice();
+    }
+    if (computerScore == 5) {
+        playerScore = 0;
+        computerScore = 0;
+        document.getElementById('p-score').innerHTML = playerScore;
+        document.getElementById('c-score').innerHTML = computerScore;
+        alert("You lose...");
+    } else if (playerScore == 5) {
+        playerScore = 0;
+        computerScore = 0;
+        document.getElementById('p-score').innerHTML = playerScore;
+        document.getElementById('c-score').innerHTML = computerScore;
+        alert("You win!")
+    }
+}
+
 function returnChoice(){
     let options = ['rock', 'paper', 'scissors'];
     let choice = options[(Math.floor(Math.random() * 3) + 1)];
-    let input = document.getElementById("choice").value;
+    let input = prompt("Please enter rock, paper, or scissors.")
     input = input.toLowerCase();
     if (input != 'rock' && input != 'paper' && input != 'scissors' ){
         alert('Please choose rock, paper, or scissors.')
