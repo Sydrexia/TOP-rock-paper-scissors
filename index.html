@@ -8,18 +8,26 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-	<script src="scripts.js"></script>
     <div class="hero">
         <h1>Let's Play Rock Paper Scissors!</h1>
         <h2>Will you defeat the dreaded computer master?</h2>
+        <h3>This battle will be first to 5 points!</h3>
     </div>
     <div class="game-space">
-        <form>
             <label for="choice">Rock, Paper, or Scissors?</label><br>
             <input type="text" id="choice" name="choice"><br>
             <button onclick="returnChoice()">Submit</button>
-        </form>
     </div>
-    <div class="result-space"><span id='result'></span></div>
+    <div class="result-space">
+      <div class="player-score">
+        <p>Player Score</p>
+        <span id="p-score"></span>
+      </div>
+      <div class="computer-score">
+        <p>Computer Score</p>
+        <span id="c-score"></span>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
   </body>
 </html>

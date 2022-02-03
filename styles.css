@@ -7,5 +7,12 @@
 }
 
 .result-space {
-    text-align: center;
+    display: flex;
+}
+
+.result-space div {
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    margin: auto;
 }
