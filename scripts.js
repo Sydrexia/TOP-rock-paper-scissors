@@ -1,6 +1,15 @@
 let playerScore = 0
 let computerScore = 0
 
+const rock = document.querySelector('#rock');
+rock.addEventListener('click', choiceRock);
+
+const paper = document.querySelector('#paper');
+paper.addEventListener('click', choicePaper);
+
+const scissors = document.querySelector('#scissors');
+scissors.addEventListener('click', choiceScissors);
+
 
 function playMatch() {
     while (playerScore < 5 && computerScore < 5) {
@@ -76,3 +85,17 @@ function returnChoice(){
     }
 }
 
+function choiceRock() {
+
+}
+
+function choicePaper() {
+
+}
+
+function choiceScissors() {
+
+}
+
+// At this point, my next objective is to fill out these three above functions
+// now that I have my event listeners in place.
