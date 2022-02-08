@@ -33,8 +33,8 @@ function playMatch() {
 function returnChoice(){
     let options = ['rock', 'paper', 'scissors'];
     let choice = options[(Math.floor(Math.random() * 3) + 1)];
-    let input = prompt("Please enter rock, paper, or scissors.")
-    input = input.toLowerCase();
+    // let input = prompt("Please enter rock, paper, or scissors.")
+    // input = input.toLowerCase();
     if (input != 'rock' && input != 'paper' && input != 'scissors' ){
         alert('Please choose rock, paper, or scissors.')
     } else if (input == 'rock') {
@@ -86,15 +86,18 @@ function returnChoice(){
 }
 
 function choiceRock() {
-
+    input = 'rock';
+    returnChoice();
 }
 
 function choicePaper() {
-
+    input = 'paper';
+    returnChoice();
 }
 
 function choiceScissors() {
-
+    input = 'scissors';
+    returnChoice();
 }
 
 // At this point, my next objective is to fill out these three above functions
